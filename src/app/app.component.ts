@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
+  selector: 'todo',
+  template: '<h1>{{title}}' +
+  '<todo-input></todo-input></h1>',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  private title: string = 'Welcome to Angular2 Sandbox!';
 }
